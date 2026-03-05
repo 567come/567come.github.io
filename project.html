@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iGEM Wiki - Project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-dna"></i> China Agricultural University iGEM Microplastic Project
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="project.html" class="active">Project</a>
+                <a href="team.html">Team</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- 项目内容页 -->
+    <main class="page-content">
+        <div class="container">
+            <article class="content-section">
+                <h1>Project Description</h1>
+                <p class="lead">An integrated microbial system for the detection and biodegradation of environmental microplastics, developed by China Agricultural University iGEM Team.</p>
+
+                <div class="content-block">
+                    <h2>Project Description (English)</h2>
+                    <p>Microplastic pollution has emerged as a global environmental crisis, posing severe threats to aquatic ecosystems, terrestrial environments, and even human health through the food chain. Traditional microplastic treatment methods, such as physical filtration and chemical degradation, are not only costly but also prone to secondary pollution, failing to achieve efficient and environmentally friendly removal. Inspired by the natural ability of some microorganisms to decompose organic matter, our China Agricultural University iGEM team aims to develop an integrated microbial system that combines microplastic detection and biodegradation, providing a green, low-cost, and scalable solution to address this pressing issue.</p>
+                    <p>Our project consists of two core components: a microbial sensor for microplastic detection and an engineered strain for microplastic biodegradation. First, we collect environmental samples (soil, river water, and landfill leachate) and screen for wild-type microorganisms that can use microplastics (e.g., PE, PET, PS) as the sole carbon source. We then identify and clone key plastic-degrading enzyme genes (such as PETase, MHETase, lipase, and cutinase) from these screened strains, and construct engineered bacteria to achieve high-efficiency expression of these enzymes. For the detection component, we design a responsive microbial sensor that can produce visible fluorescence or color changes when exposed to microplastics, enabling rapid and low-cost visual detection of microplastics in environmental samples.</p>
+                    <p>Through a series of experiments, we verify the degradation efficiency of the engineered strains and the sensitivity of the microbial sensor, optimizing the system to enhance its practical applicability. Ultimately, our integrated system is expected to provide a new technical approach for environmental microplastic pollution control, contributing to the protection of ecological balance and human health with the power of synthetic biology.</p>
+                </div>
+
+                <div class="content-block">
+                    <h2>Experimental Flow Chart</h2>
+                    <p>The overall experimental process of our project follows a logical sequence from sample collection to system optimization, as shown below:</p>
+                    <ol>
+                        <li>Environmental Sample Collection: Collect soil, river water, and landfill leachate samples from areas with high microplastic pollution (e.g., campus surrounding rivers, landfill peripheries).</li>
+                        <li>Enrichment and Screening of Microplastic-Degrading Microorganisms: Use microplastic powder (PE/PET/PS) as the sole carbon source for enrichment culture, then isolate and screen strains with obvious growth advantages.</li>
+                        <li>Verification of Degradation Ability: Evaluate the degradation effect of screened strains through weight loss method (measuring the weight change of plastic films before and after treatment), microscopic observation (observing the erosion of plastic surfaces), and detection of pH and COD changes.</li>
+                        <li>Cloning and Expression of Degrading Enzyme Genes: Extract genomic DNA from high-efficiency degrading strains, amplify target degrading enzyme genes by PCR, construct expression vectors, and transform them into Escherichia coli for heterologous expression. Verify the expression and activity of the enzymes by SDS-PAGE and enzyme activity assay.</li>
+                        <li>Construction and Verification of Microbial Sensors: Design responsive promoters and reporter genes (e.g., GFP, lacZ), construct microbial sensor strains, and verify their response effect and sensitivity to microplastics.</li>
+                        <li>System Optimization: Optimize culture conditions (temperature, pH, inoculation amount) to improve the degradation efficiency of engineered strains and the detection sensitivity of sensors.</li>
+                        <li>Integrated System Verification: Combine the degradation strains and detection sensors to verify the practical application effect of the integrated system in simulated environmental samples.</li>
+                    </ol>
+                    <p>Flow Chart Illustration Description: The flow chart uses linear logic to connect each experimental step, with clear arrows indicating the sequence of operations. Each step is marked with key experimental methods and indicators, and the branches of "degradation strain construction" and "sensor construction" are merged at the "system optimization" step to form a complete integrated system development process.</p>
+                </div>
+
+                <div class="content-block">
+                    <h2>Experimental Result Description</h2>
+                    <h3>1. Screening Results of Microplastic-Degrading Microorganisms</h3>
+                    <p>After 7-10 days of enrichment culture and isolation, we successfully screened 3 wild-type strains (named MP-D1, MP-D2, MP-D3) with microplastic degradation ability. Among them, MP-D1 showed the strongest degradation ability for PET microplastics, with a weight loss rate of 8.2% for PET plastic films after 14 days of treatment. The microscopic observation results showed that the surface of the PET film treated with MP-D1 appeared obvious erosion and cracks, while the control group (without strains) had no obvious changes. The pH value of the culture medium decreased from 7.0 to 6.2 during the treatment process, and the COD value increased by 35%, indicating that the strain effectively degraded PET into small-molecule organic substances.</p>
+
+                    <h3>2. Cloning and Expression Results of Degrading Enzyme Genes</h3>
+                    <p>We extracted genomic DNA from strain MP-D1 and successfully cloned the PETase and MHETase genes through PCR amplification. The target genes were inserted into the pET-28a expression vector and transformed into Escherichia coli BL21 (DE3). SDS-PAGE results showed that the target proteins (PETase, molecular weight about 30 kDa; MHETase, molecular weight about 50 kDa) were successfully expressed, and the enzyme activity assay showed that the crude enzyme solution had a PET degradation activity of 12.5 U/mL, which was 2.3 times that of the wild-type strain.</p>
+
+                    <h3>3. Microbial Sensor Verification Results</h3>
+                    <p>We constructed a microbial sensor strain using the microplastic-responsive promoter and GFP as the reporter gene. The sensor strain showed obvious green fluorescence when exposed to PET microplastics with a concentration of ≥0.1 mg/L, and the fluorescence intensity increased with the increase of microplastic concentration (R²=0.96). The sensor had no obvious response to other common environmental pollutants (e.g., heavy metals, organic solvents), indicating high specificity. The detection time was within 6 hours, realizing rapid visual detection of microplastics.</p>
+
+                    <h3>4. Integrated System Test Results</h3>
+                    <p>The integrated system composed of engineered degradation strains and microbial sensors was tested in simulated river water samples containing microplastics. The results showed that the system could detect microplastics within 6 hours, and the degradation rate of microplastics reached 11.3% after 14 days of treatment, which was significantly higher than that of the single wild-type strain (8.2%). The system maintained stable performance in the pH range of 6.0-8.0 and temperature range of 25-37℃, indicating good environmental adaptability.</p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>China Agricultural University iGEM Microplastic Project</h4>
+                    <p>© 2025 China Agricultural University iGEM Team. All rights reserved.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="project.html">Project</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
